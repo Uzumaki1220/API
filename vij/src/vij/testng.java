@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
 public class testng {
@@ -19,7 +20,10 @@ public class testng {
 	@Test(priority=2)
 	public void loginpage()
 	{
-
+		ChromeOptions option=new ChromeOptions();
+		option.addArguments("--remote-allow-origins=*");
+		option.addArguments("headless");
+		WebDriver driver=new ChromeDriver(option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://in.linkedin.com/");
 		driver.manage().window().maximize();
