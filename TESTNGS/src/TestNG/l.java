@@ -9,6 +9,8 @@ public class l implements ITestListener {
 	    // not implemented
 		System.out.println("lstners on test success");
 	  }
+	
+	///////////////////////viajicacjjad
 
 	 
 	public void onTestFailure(ITestResult result) {
