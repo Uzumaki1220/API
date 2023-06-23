@@ -61,8 +61,8 @@ public class Flighttickets {
 
 		driver.findElement(By.cssSelector("div[id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] a[value='GOI']"))
 				.click();
-
-		driver.findElement(By.cssSelector("td[class=' ui-datepicker-days-cell-over  ui-datepicker-today']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.cssSelector("td[class*='ui-datepicker-today']")).click();
 
 		// checkboxes
 

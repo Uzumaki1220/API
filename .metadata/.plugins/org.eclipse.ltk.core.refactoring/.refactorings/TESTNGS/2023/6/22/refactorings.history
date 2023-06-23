@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ssOnFail.java&apos; to &apos;newframework/src/test/java/frame.newframework&apos;&#x0D;&#x0A;- Original project: &apos;TESTNGS&apos;&#x0D;&#x0A;- Destination element: &apos;newframework/src/test/java/frame.newframework&apos;&#x0D;&#x0A;- Original element: &apos;TestNG.ssOnFail.java&apos;" description="Copy compilation unit" destination="=newframework/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;frame.newframework" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;TestNG{ssOnFail.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1685621227587" units="1" version="1.0"/>
+</session>

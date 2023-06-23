@@ -1,0 +1,32 @@
+package Resources;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import POJO.AddPlace;
+import POJO.Location;
+
+public class TestData {
+
+	public AddPlace AddPlacePayload(String string, String string2, String string3)
+	{
+		AddPlace p = new AddPlace();
+		p.setAccuracy(50);
+		p.setAddress(string3);
+		p.setLanguage(string2);
+		p.setPhone_number("(+91) 983 893 3937");
+		p.setWebsite("https://rahulshettyacademy.com");
+		p.setName(string);
+		List<String> myList = new ArrayList<String>();
+		myList.add("shoe park");
+		myList.add("shop");
+
+		p.setTypes(myList);
+		Location l = new Location();
+		l.setLat(-38.383494);
+		l.setLng(33.427362);
+		p.setLocation(l);
+		return p;
+	}
+	
+}

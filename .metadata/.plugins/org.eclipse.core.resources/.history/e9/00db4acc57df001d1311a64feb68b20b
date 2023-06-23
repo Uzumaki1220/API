@@ -1,0 +1,27 @@
+package vij;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Automation_Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32");
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("window.scrollTo(0,500)");
+WebElement	table=	driver.findElement(By.className("tableFixHead"));
+Actions a=new Actions(driver);
+a.scrollByAmount(0, 100);
+	}
+	
+
+}

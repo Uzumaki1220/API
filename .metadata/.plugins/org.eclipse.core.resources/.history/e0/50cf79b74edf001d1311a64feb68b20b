@@ -1,0 +1,66 @@
+package vij;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Window;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Caleneder {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		WebDriver driver = new ChromeDriver(options);
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32");
+
+		driver.manage().window().maximize();
+
+		driver.get("https://www.path2usa.com/travel-companion/");
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement date = driver.findElement(By.cssSelector("input[id='form-field-travel_comp_date']"));
+		// wait.until(ExpectedConditions.elementToBeClickable(date));
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", date);
+		// js.executeScript("window.scrollBy(209,1100");
+
+		Thread.sleep(1000);
+
+		date.click();
+
+//	
+		Thread.sleep(1000);
+
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); 
+		while (!driver.findElement(By.cssSelector(".cur-month")).getText().contains("June")) {
+			// driver.findElement(By.cssSelector(".flatpickr-next-month")).click();
+			// instead of single its getting double click , so give one month extra
+			Actions a = new Actions(driver);
+			a.moveToElement(driver.findElement(By.cssSelector(".flatpickr-next-month"))).click().build().perform();
+
+		}
+
+		Thread.sleep(1000);
+		List<WebElement> days = driver.findElements(By.cssSelector("[class='flatpickr-day ']"));
+		for (int i = 0; i < days.size(); i++) {
+			String day = days.get(i).getText();
+			System.out.println(day);
+			if (day.equalsIgnoreCase("10")) {
+				days.get(i).click();
+				break;
+			}
+		}
+
+	}
+
+}

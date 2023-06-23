@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="demo"/>
+			<item value="DemoProject"/>
+			<item value="amazon"/>
+			<item value="vij"/>
+			<item value="vijay"/>
+		</list>
+		<list key="name">
+			<item value="pojoSample"/>
+			<item value="demo"/>
+		</list>
+		<list key="artifactId">
+			<item value="demo"/>
+			<item value="DemoProject"/>
+			<item value="amazon"/>
+			<item value="vij"/>
+			<item value="vijay"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\hariv\Downloads\DemoProject (2)\DemoProject"/>
+			<item value="C:\SeleniumFrameworkDesign"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\hariv\Downloads\APIFramework\APIFramework"/>
+			<item value="C:\Users\hariv\Downloads\apit\apit\src\demo\ECommerceAPITest.java"/>
+			<item value="C:\Users\hariv\eclipse-workspace\vij\src\TestNG"/>
+			<item value="C:\Users\hariv\eclipse-workspace\vij\src\vij"/>
+			<item value="C:\Users\hariv\eclipse-workspace\vij\src\vij\Automation_practice.java"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="E2E.APIframeworkdemo"/>
+			<item value="final.API_Framework_practice"/>
+			<item value="cucm.Automation"/>
+			<item value="cucumber.Autoamtion"/>
+			<item value="cucumber.APIAutomation"/>
+		</list>
+		<list key="groupId">
+			<item value="E2E"/>
+			<item value="final"/>
+			<item value="cucm"/>
+			<item value="cucumber"/>
+		</list>
+		<list key="artifactId">
+			<item value="APIframeworkdemo"/>
+			<item value="API_Framework_practice"/>
+			<item value="Automation"/>
+			<item value="Autoamtion"/>
+			<item value="APIAutomation"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+</section>

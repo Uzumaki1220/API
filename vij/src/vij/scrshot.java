@@ -33,6 +33,7 @@ public class scrshot {
 //			FileUtils.copyFile(src,new File("C:\\Users\\hariv\\screenshot.png"));
 		File sssss=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
+		
 		FileUtils.copyFile(sssss, new File("C:\\Users\\hariv\\vijayg.png"));
 		driver.close();
 	}

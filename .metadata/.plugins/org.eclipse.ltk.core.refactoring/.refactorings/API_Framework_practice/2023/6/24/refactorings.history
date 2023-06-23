@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;API_Framework_practice/src/test/java/final&apos; to &apos;practice&apos;" description="Rename resource &apos;final&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/test/java/final" name="practice" stamp="1686574950250" updateReferences="true"/>
+</session>

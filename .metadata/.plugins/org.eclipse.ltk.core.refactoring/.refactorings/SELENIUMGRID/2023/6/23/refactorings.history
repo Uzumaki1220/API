@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;test2.java&apos; to &apos;vij/src/vij&apos;&#x0D;&#x0A;- Original project: &apos;GRID&apos;&#x0D;&#x0A;- Destination element: &apos;vij/src/vij&apos;&#x0D;&#x0A;- Original element: &apos;grid.test2.java&apos;" description="Copy compilation unit" destination="=vij/src=/optional=/true=/=/maven.pomderived=/true=/&lt;vij" element1="/src&lt;grid{test2.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1685884638461" units="1" version="1.0"/>
+</session>

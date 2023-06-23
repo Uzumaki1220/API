@@ -25,6 +25,9 @@ public class dropdowns {
 
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		driver.manage().window().maximize();
+		
+		
+		//auto suggest
 		driver.findElement(By.id("autosuggest")).sendKeys("ind");
 		Thread.sleep(1000);
 

@@ -3,11 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="vij.testng">
+      <class name="vij.ExtentRepo">
         <methods>
           <include name="loginpage"/>
+          <include name="ExtentReports"/>
         </methods>
-      </class> <!-- vij.testng -->
+      </class> <!-- vij.ExtentRepo -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,48 @@
+package vij;
+
+import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class windowhandles {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		
+		
+//		
+//		ChromeOptions options=new ChromeOptions();
+//		options.addArguments("headless");
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
+		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
+		
+		driver.findElement(By.linkText("Free Access to InterviewQues/ResumeAssistance/Material")).click();
+		
+	Set<String> w=	driver.getWindowHandles();
+		
+	Iterator<String> it=w.iterator();
+	
+String	p=it.next();
+String c=it.next();
+driver.switchTo().window(p);
+driver.switchTo().window(c);
+Thread.sleep(5);
+
+WebDriverWait wa=new WebDriverWait(driver,Duration.ofSeconds(5));
+wa.until(ExpectedConditions.visibilityOf(driver.findElement(By.cssSelector("p[class='im-para red']"))));
+		
+System.out.println(driver.findElement(By.cssSelector("p[class='im-para red']")).getText());
+driver.quit();
+	}
+
+}

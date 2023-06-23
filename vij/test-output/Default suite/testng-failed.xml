@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="vij.Automation_practice">
+      <class name="vij.testng">
         <methods>
-          <include name="link"/>
-          <include name="initialization"/>
+          <include name="loginpage"/>
+          <include name="ExtentReports"/>
         </methods>
-      </class> <!-- vij.Automation_practice -->
+      </class> <!-- vij.testng -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

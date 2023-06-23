@@ -1,0 +1,32 @@
+package vij;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class indigo {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.airasia.com/en/gb");
+		
+		driver.findElement(By.id("flights-productTile-tile-1")).click();
+		
+	Actions a=new Actions(driver);
+	
+		WebElement trip=	driver.findElement(By.cssSelector("div[class$='iBduHL']"));
+		
+a.moveToElement(trip).click().build().perform();
+Thread.sleep(1000);
+		WebElement oneway=	driver.findElement(By.cssSelector("div[class$='eRnSbI']"));
+a.moveToElement(oneway).click().build().perform();
+
+
+	}
+
+}

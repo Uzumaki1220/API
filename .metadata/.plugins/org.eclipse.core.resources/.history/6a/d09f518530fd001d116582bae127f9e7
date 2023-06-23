@@ -1,0 +1,26 @@
+package vij;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class indigo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.airasia.com/en/gb");
+		
+		driver.findElement(By.id("flights-productTile-tile-1")).click();
+		
+	WebElement trip=	driver.findElement(By.cssSelector("div[class$='iBduHL']"));
+	
+	Select s=new Select(trip);
+	s.selectByIndex(1);
+	}
+
+}

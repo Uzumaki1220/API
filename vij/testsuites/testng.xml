@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="vij.testng"/>
+      <class name="vij.ExtentRepo"/>
    
     </classes>
   </test> <!-- Test -->

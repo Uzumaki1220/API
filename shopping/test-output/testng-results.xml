@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-27T11:27:58 IST" name="Suite" finished-at="2023-04-27T11:27:58 IST" duration-ms="38">
+    <groups>
+      <group name="purchase">
+        <method signature="StandAlone2.submitOrder(java.util.HashMap)[pri:0, instance:FinalFrameworks.shopping.StandAlone2@6302bbb1]" name="submitOrder" class="FinalFrameworks.shopping.StandAlone2"/>
+      </group> <!-- purchase -->
+    </groups>
+    <test started-at="2023-04-27T11:27:58 IST" name="main" finished-at="2023-04-27T11:27:58 IST" duration-ms="38">
+      <class name="FinalFrameworks.shopping.StandAlone2">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:FinalFrameworks.shopping.StandAlone2@6302bbb1]" started-at="2023-04-27T11:27:58 IST" name="submitOrder" data-provider="data" finished-at="2023-04-27T11:27:58 IST" duration-ms="12" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void FinalFrameworks.shopping.StandAlone2.submitOrder(java.util.HashMap) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: submitOrder([java.util.HashMap<java.lang.String, java.lang.String> arg0])
+Arguments: [(java.util.HashMap) {password=vijay1220, email=vijay1220@gmail.com, productName=ZARA COAT 3},(java.util.HashMap) {pass=kumar122, email=kumar122@gmial.com, productName=ADIDAS ORIGINAL}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void FinalFrameworks.shopping.StandAlone2.submitOrder(java.util.HashMap) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: submitOrder([java.util.HashMap<java.lang.String, java.lang.String> arg0])
+Arguments: [(java.util.HashMap) {password=vijay1220, email=vijay1220@gmail.com, productName=ZARA COAT 3},(java.util.HashMap) {pass=kumar122, email=kumar122@gmial.com, productName=ADIDAS ORIGINAL}]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+      </class> <!-- FinalFrameworks.shopping.StandAlone2 -->
+    </test> <!-- main -->
+  </suite> <!-- Suite -->
+</testng-results>

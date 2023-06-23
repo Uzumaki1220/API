@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="TestNG.l"></listener>
+	</listeners>
+<parameter name="URL" value="https://rahulshettyacademy.com/"></parameter>
+	<!--<test thread-count="5" name="Test">
+		<classes>
+			<class name="TestNG.sample">
+
+
+			</class>
+
+
+		</classes>
+	</test> --> 
+
+	<test name="total">
+		<classes>
+			<class name="TestNG.sample"></class>
+			<class name="TestNG.sample2"></class>
+			<class name="TestNG.sample3"></class>
+		</classes>
+	</test>
+
+	<!--<test name="regression">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNG.sample"></class>
+			<class name="TestNG.sample2"></class>
+			<class name="TestNG.sample3"></class>
+
+		</classes>
+	</test> -->
+	<!--
+	
+	
+	
+	Test -->
+</suite> <!--
+Suite -->
